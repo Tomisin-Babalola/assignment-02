@@ -76,8 +76,8 @@ const arr = [
         64
     ]
 function evenNumbers(arr){
-  var count = 0;
-    for ( var i = 0; i < arr.length; i++ ){ 
+  let count = 0;
+    for (let i = 0; i < arr.length; i++ ){ 
       if (arr[i] % 2 == 0){
         count++;
       }
