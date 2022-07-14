@@ -11,35 +11,23 @@ const assignment = {};
  * If you did Challenge - 1, remove the comment in the line just after this function
  
  */
-const numbers = [
-        68,
-        -68,
-        27,
-        94,
-        72,
-        -25,
-        -51,
-        32,
-        10,
-        64,
-        -94,
-        4,
-        34,
-        -86,
-        90,
-        81,
-        20,
-        -56,
-        -91,
-        -50
-    ];
 
-let sumOfNumbers = numbers.reduce (
+function sumOfNumbers(arrayOfNumbers) {
 
-  function (a, b)  {
-    return a + b
-  }, 0);
-    console.log(sumOfNumbers)
+//   let count = 0;
+//   for(let i = 0; i < numbers.length; i++) {
+//     count = count + numbers[i];
+// }
+ let sum = 0;
+  for(let i = 0; i < arrayOfNumbers.length; i++) {
+    sum += arrayOfNumbers[i]
+  }
+    return sum;
+  
+  
+}
+assignment.sumOfNumbers = sumOfNumbers;
+
   
   
 
@@ -75,7 +63,7 @@ const arr = [
         29,
         64
     ]
-function evenNumbers(arr){
+function countEvenNumbers(arr){
   let count = 0;
     for (let i = 0; i < arr.length; i++ ){ 
       if (arr[i] % 2 == 0){
@@ -86,7 +74,8 @@ function evenNumbers(arr){
 
   };
 
-  console.log(evenNumbers(arr));
+  console.log(countEvenNumbers(arr));
+  assignment.countEvenNumbers = countEvenNumbers;
 
 
 /**
